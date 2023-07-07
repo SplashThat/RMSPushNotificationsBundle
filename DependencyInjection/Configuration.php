@@ -20,7 +20,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder("rms_push_notifications");
-        $this->root = $treeBuilder->getRoot();
+        $this->root = $treeBuilder->getRootNode();
 
         $this->addAndroid();
         $this->addiOS();
